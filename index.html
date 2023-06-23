@@ -23,19 +23,22 @@
                         <h1 id="L">LOLITO  BANANO</h1>
                     </li>
                     <li>
-                        <h3><a href="#home"><i class="fas fa-home"></i> Home</a></h3>
+                        <h3><a href="#home" id="a"><i class="fas fa-home"></i> Home</a></h3>
                     </li>
                     <li>
-                        <h3><a href="#skills"><i class="fas fa-code"></i> Skills</a></h3>
+                        <h3><a href="#skills" id="a"><i class="fas fa-code"></i> Skills</a></h3>
                     </li>
                     <li>
-                        <h3><a href="#education"><i class="fas fa-graduation-cap"></i> Education Background</a></h3>
+                      <h3><a href="#Project" id="a"><i class="fas fa-project-diagram"></i>Project</a></h3>
                     </li>
                     <li>
-                        <h3><a href="#work"><i class="fas fa-briefcase"></i> Work Experience</a></h3>
+                        <h3><a href="#education" id="a"><i class="fas fa-graduation-cap"></i> Education Background</a></h3>
                     </li>
                     <li>
-                        <h3><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></h3>
+                        <h3><a href="#work" id="a"><i class="fas fa-briefcase"></i> Work Experience</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#contact" id="a"><i class="fas fa-envelope"></i> Contact</a></h3>
                     </li>
                 </ul>
             </nav>
@@ -61,7 +64,7 @@
             </div>
             <br>
             <div class="button-group">
-                <a href="cv.pdf" download>
+                <a href="cv.pdf" target="_blank">
                     <button class="download-button">Download CV</button>
                   </a>
               </div>
@@ -110,7 +113,19 @@
       </div>
       <!---------------------------------------------------  End Skills ------------------------------------------------->
 
-      <!----------------------------------------------------- Start Education ------------------------------------------->
+      <!-----------------------------------------------------StartProject------------------------------------------------>
+      <div>
+        <h1 id="Project">Project</h1>
+      </div>
+        <div class="Project">
+          <h3>HORIZON</h3>
+          <p>First Assignment</p>
+          <div>
+            <a href="https://hyperlitz.github.io/HORIZON/" target="_blank"><img src="Hor.png" alt="Image of HORIZON Website"></a>
+          </div>
+      </div>
+      <!-----------------------------------------------------End Project------------------------------------------------>
+
       <div class="education" id="education">
         <h1>EDUCATIONAL BACKGROUND</h1>
         <div class="education-container">
@@ -206,11 +221,27 @@
       <hr>
       <section class="contact-section" id="contact">
         <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> litobanano@yahoo.com</p>
+            <p><i class="fas fa-envelope"></i> Litobanano@yahoo.com</p>
             <p><i class="fas fa-phone"></i> 415-732-9784</p>
             <p><i class="fas fa-map-marker-alt"></i> 737 Towers, 737 Post St, San Francisco City, California, 94109</p>
         </div>
-      </section>
+        <div class="contact-form-wrapper">
+            <div class="contact-form">
+                <form action="#" method="POST" id="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1112283834755!2d-122.4166068243167!3d37.78743301143103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858091f3399853%3A0x1d80ea57d3ded1be!2sTower%20737%20Condominium%20Rentals!5e0!3m2!1sfil!2sph!4v1687447206531!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>            
+            </div>
+        </div>
+    </section>
     <!--------------------------------------------------------- End Contact ---------------------------------------------->
 
     <footer class="footer">
